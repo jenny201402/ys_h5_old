@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>亚盛国际</title>
+	<link rel="stylesheet" href="css/layout.css">
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="js/config.js"></script>
+</head>
+<body>
+	<!-- header-begin -->
+	<input id="checkSlide" type="checkbox">
+	<header>
+		<i class="history"></i>
+		<h4>会员注册</h4>
+	</header>
+	<!-- header-end -->
+
+	<!-- container-begin -->
+	<section id="wrapper" class="wrapper">
+		<div id="scroller" class="scroller">
+			<div class="a-l-b yas">
+				<div class="title">
+					<i></i>
+					<span>账号信息</span>
+				</div>
+				<form class="logRegForm userRegForm" action="">
+					<input type="hidden" id="prefix" value="YS">
+					<div class="line">
+						<i class="i-user"></i>
+						<input class="userName" type="text" placeholder="用户名必须为5-10位字母、数字">
+					</div>
+					<div class="line">
+						<i class="i-pwd"></i>
+						<input class="userPwd" type="password" placeholder="密码必须为6-12位字母、数字">
+					</div>
+					<div class="line mbt-0">
+						<i class="i-pwd"></i>
+						<input class="userRePwd" type="password" placeholder="请输入确认密码">
+					</div>
+					<div class="title secTit">
+						<i></i>
+						<span>用户信息</span>
+					</div>
+					<div class="line">
+						<i class="i-name"></i>
+						<input class="realName" type="text" placeholder="请务必填写真实姓名(与充值/提款银行卡绑定)">
+					</div>
+					<div class="line">
+						<i class="i-email"></i>
+						<input class="email" type="text" placeholder="请输入邮箱">
+					</div>
+					<div class="line">
+						<i class="i-recommend"></i>
+						<input class="recommend" type="text" placeholder="请输入推荐人">
+					</div>
+					<p class="tiptxt"></p>
+					<div class="btnGroup">
+						<a href="javascript:void(0);" class="btn btnReg userRegBtn">注&nbsp;&nbsp;册</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- container-end -->
+
+	<!-- footer-begin -->
+	<footer>
+		<ul class="ft-nav clearfix">
+			<li>
+				<a href="./index.html">
+					<i></i>
+					<span>首页</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>存款</span>
+				</a>
+			</li>					
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>转账</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>客服</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>我的</span>
+				</a>
+			</li>
+		</ul>
+	</footer>
+	<!-- footer-end -->
+	<script type="text/javascript" src="lib/iscroll/iscroll.js"></script>
+	<script src="js/common.js"></script>
+	<script type="text/javascript">
+
+		$$.iScrollForms("wrapper");
+
+		$(document).ready(function(){
+
+			$$.goBack();
+
+			$$.userReg();
+
+		})
+
+	</script>
+</body>
+</html>

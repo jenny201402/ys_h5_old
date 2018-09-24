@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>亚盛国际</title>
+	<link rel="stylesheet" href="css/layout.css">
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="js/config.js"></script>
+</head>
+<body>
+	<!-- header-begin -->
+	<input id="checkSlide" type="checkbox">
+	<header>
+		<i class="history"></i>
+		<h4>用户登录</h4>
+	</header>
+	<!-- header-end -->
+
+	<!-- container-begin -->
+	<section id="wrapper" class="wrapper">
+		<div id="scroller" class="scroller">
+			<div class="a-l-b">
+				<div class="space"></div>
+				<img class="logo" src="./images/loginReg/logo.png" alt="">
+				<form class="logRegForm userLoginForm" action="">
+					<input type="hidden" id="prefix" value="YS">
+					<div class="line">
+						<i class="i-user"></i>
+						<input class="userName" type="text" placeholder="ys开头，字母或数字组合">
+					</div>
+					<div class="line">
+						<i class="i-pwd"></i>
+						<input class="userPwd" type="password" placeholder="请输入密码">
+					</div>
+					<p class="tiptxt"></p>
+					<div class="btnGroup">
+						<a href="javascript:void(0);" class="btn btnLogin userLoginBtn">登&nbsp;&nbsp;录</a>
+						<a href="./agentRegister.html" class="btn btnReg">注&nbsp;&nbsp;册</a>
+					</div>
+					<p class="btmLink">
+						<a class="forget" href="javascript:void(0);">忘记密码</a>
+						<a href="javascript:void(0);">在线客服</a>
+					</p>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- container-end -->
+
+	<!-- footer-begin -->
+	<footer>
+		<ul class="ft-nav clearfix">
+			<li>
+				<a href="./index.html">
+					<i></i>
+					<span>首页</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>存款</span>
+				</a>
+			</li>					
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>转账</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>客服</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>我的</span>
+				</a>
+			</li>
+		</ul>
+	</footer>
+	<!-- footer-end -->
+	<script type="text/javascript" src="lib/iscroll/iscroll.js"></script>
+	<script src="js/common.js"></script>
+	<script type="text/javascript">
+
+		$$.iScrollForms("wrapper");
+
+		$(document).ready(function(){
+
+			$$.goBack();
+
+			$$.userLogin();
+
+		})
+
+	</script>
+</body>
+</html>

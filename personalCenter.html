@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>亚盛国际</title>
+	<link rel="stylesheet" href="css/layout.css">
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="js/config.js"></script>
+</head>
+<body>
+	<!-- header-begin -->
+	<input id="checkSlide" type="checkbox">
+	<header>
+		<i class="history"></i>
+		<h4>个人中心</h4>
+	</header>
+	<!-- header-end -->
+
+	<!-- container-begin -->
+	<section id="wrapper" class="wrapper">
+		<div id="scroller" class="scroller">
+			<div class="p-s-c">
+				<div class="top clearfix">
+					<i class="pull-left"></i>
+					<span class="sayHello">你好，大帅比！</span>
+					<a href="javascript:void(0)" class="btn pull-right">退出登录</a>
+				</div>
+				<ul class="cont clearfix">
+					<li>
+						<a class="aniGo" href="./personalInfo.html">
+							<img src="./images/index/index-ag.png" alt="">
+							<span>个人资料</span>
+						</a>
+					</li>
+					<li>
+						<a class="aniGo" href="./deposit.html">
+							<img src="./images/index/index-ebet.png" alt="">
+							<span>存款</span>
+						</a>
+					</li>
+					<li>
+						<a class="aniGo" href="./withdraw.html">
+							<img src="./images/index/index-777.png" alt="">
+							<span>提款</span>
+						</a>
+					</li>
+					<li>
+						<a class="aniGo" href="./transfer.html">
+							<img src="./images/index/index-mg.png" alt="">
+							<span>转账</span>
+						</a>
+					</li>
+					<li>
+						<a class="aniGo" href="./tradeRecord.html">
+							<img src="./images/index/index-pt.png" alt="">
+							<span>交易记录</span>
+						</a>
+					</li>
+					<li>
+						<a class="aniGo" href="./transRecord.html">
+							<img src="./images/index/index-sb.png" alt="">
+							<span>转账记录</span>
+						</a>
+					</li>
+					<li>
+						<a class="aniGo" href="./returnProfit.html">
+							<img src="./images/index/index-keno.png" alt="">
+							<span>即时返水</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- container-end -->
+
+	<!-- footer-begin -->
+	<footer>
+		<ul class="ft-nav clearfix">
+			<li>
+				<a href="./index.html">
+					<i></i>
+					<span>首页</span>
+				</a>
+			</li>
+			<li>
+				<a href="./deposit.html">
+					<i></i>
+					<span>存款</span>
+				</a>
+			</li>					
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>转账</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>客服</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>我的</span>
+				</a>
+			</li>
+		</ul>
+	</footer>
+	<!-- footer-end -->
+	<script type="text/javascript" src="lib/iscroll/iscroll.js"></script>
+	<script src="js/common.js"></script>
+	<script type="text/javascript">
+
+		$$.iScrollForms("wrapper");
+
+		$(document).ready(function(){
+
+			$$.goBack();
+
+			$$.dptForm();
+
+		})
+
+	</script>
+</body>
+</html>

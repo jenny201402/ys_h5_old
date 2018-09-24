@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>亚盛国际</title>
+	<link rel="stylesheet" href="css/layout.css">
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="js/config.js"></script>
+</head>
+<body>
+	<!-- header-begin -->
+	<input id="checkSlide" type="checkbox">
+	<header>
+		<i class="history"></i>
+		<!-- 登陆前-begin -->
+		<h4>转账记录</h4>
+		<i class="showMenu"></i>
+		<ul class="s-m-u">
+			<li><a href="./tradeRecord.html">交易记录</a></li>
+			<li><a href="./transRecord.html">转账记录</a></li>
+			<li><a href="./returnProfit.html">即时返水</a></li>
+		</ul>		
+	</header>
+	<!-- header-end -->
+
+	<!-- container-begin -->
+	<section id="wrapper" class="wrapper">
+		<div id="scroller" class="scroller">
+			<div class="recordList">
+				<form action="" class="pFrom clearfix">
+					<div class="line">
+						<input type="date" placeholder="开始日期">
+					</div>
+					<div class="to">到</div>
+					<div class="line">
+						<input type="date" placeholder="结束日期">
+					</div>
+					<div class="line sel">
+						<select value="">
+                        	<option name="" id="">取款</option>
+                        	<option name="" id="">存款</option>
+                        	<option name="" id="">红利</option>
+                        </select>
+					</div>
+					<a href="javascript:void(0);" class="btn">查询</a>
+				</form>
+
+				<ul class="r-l-u"> 
+					<li class="item">
+						<p>平台：<span>BBIN</span></p>
+						<p>类别：<span>转入</span></p>
+						<p>金额：<span>1000.00</span></p>
+						<p>时间：<span>2018-01-01 12:01:01</span></p>
+					</li>
+					<li class="item">
+						<p>平台：<span>BBIN</span></p>
+						<p>类别：<span>转入</span></p>
+						<p>金额：<span>1000.00</span></p>
+						<p>时间：<span>2018-01-01 12:01:01</span></p>
+					</li>
+					<li class="item">
+						<p>平台：<span>BBIN</span></p>
+						<p>类别：<span>转入</span></p>
+						<p>金额：<span>1000.00</span></p>
+						<p>时间：<span>2018-01-01 12:01:01</span></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- container-end -->
+
+	<!-- footer-begin -->
+	<footer>
+		<ul class="ft-nav clearfix">
+			<li>
+				<a href="./index.html">
+					<i></i>
+					<span>首页</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>存款</span>
+				</a>
+			</li>					
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>转账</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>客服</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>我的</span>
+				</a>
+			</li>
+		</ul>
+	</footer>
+	<!-- footer-end -->
+	<script type="text/javascript" src="lib/iscroll/iscroll.js"></script>
+	<script src="js/common.js"></script>
+	<script type="text/javascript">
+
+		$$.iScrollForms("wrapper");
+
+		$(document).ready(function(){
+
+			$$.goBack();
+
+			$$.showMenu();
+
+		})
+
+	</script>
+</body>
+</html>

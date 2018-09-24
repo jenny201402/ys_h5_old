@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>亚盛国际</title>
+	<link rel="stylesheet" href="css/layout.css">
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="js/config.js"></script>
+</head>
+<body>
+	<!-- header-begin -->
+	<input id="checkSlide" type="checkbox">
+	<header>
+		<i class="history"></i>
+		<h4>个人资料</h4>
+	</header>
+	<!-- header-end -->
+
+	<!-- container-begin -->
+	<section id="wrapper" class="wrapper">
+		<div id="scroller" class="scroller">
+			<div class="a-l-b p-i-b">
+				<div class="space"></div>
+				<img class="logo" src="./images/loginReg/logo.png" alt="">
+
+				<form class="uForm" action="">
+					<div class="line clearfix">
+						<label for="mobilePhone"><span>手机号码:</span></label>
+						<div class="input">
+	                        <input tabindex="2" id="mobilePhone" name="mobilePhone" value="" type="text" placeholder="请输入手机号码">
+	                    </div>
+					</div>
+					<div class="line clearfix">
+						<label for="tencent"><span>QQ号码:</span></label>
+						<div class="input">
+	                        <input tabindex="2" id="tencent" name="tencent" value="" type="text" placeholder="请输入QQ号码">
+	                    </div>
+					</div>
+					<div class="line clearfix">
+						<label for="wechat"><span>微信:</span></label>
+						<div class="input">
+	                        <input tabindex="2" id="wechat" name="wechat" value="" type="text" placeholder="请输入微信号码">
+	                    </div>
+					</div>
+					<div class="line clearfix">
+						<label for="email"><span>电子邮箱:</span></label>
+						<div class="input">
+	                        <input tabindex="2" id="email" name="email" value="" type="text" placeholder="请输入电子邮箱">
+	                    </div>
+					</div>
+					<p class="tiptxt"></p>
+					<p class="text">* 注：联系资料绑定后不可以自己修改，修改需要联系 <a href="javascript:void(0);">在线客服。</a>请认真填写！</p>
+					<a href="javascript:void(0);" class="btn transferBtn">确&nbsp;认&nbsp;提&nbsp;交</a>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- container-end -->
+
+	<!-- footer-begin -->
+	<footer>
+		<ul class="ft-nav clearfix">
+			<li>
+				<a href="./index.html">
+					<i></i>
+					<span>首页</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>存款</span>
+				</a>
+			</li>					
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>转账</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>客服</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>我的</span>
+				</a>
+			</li>
+		</ul>
+	</footer>
+	<!-- footer-end -->
+	<script type="text/javascript" src="lib/iscroll/iscroll.js"></script>
+	<script src="js/common.js"></script>
+	<script type="text/javascript">
+
+		$$.iScrollForms("wrapper");
+
+		$(document).ready(function(){
+
+			$$.goBack();
+
+		})
+
+	</script>
+</body>
+</html>

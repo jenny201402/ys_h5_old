@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>亚盛国际</title>
+	<link rel="stylesheet" href="css/layout.css">
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="js/config.js"></script>
+</head>
+<body>
+	<!-- header-begin -->
+	<input id="checkSlide" type="checkbox">
+	<header>
+		<i class="history"></i>
+		<!-- 登陆前-begin -->
+		<h4>会员等级</h4>
+		<i class="showMenu"></i>
+		<ul class="s-m-u">
+			<li><a href="./vip-level.html">会员等级</a></li>
+			<li><a href="./vip-entitle.html">会员特权</a></li>
+			<li><a href="./rules.html">规则与条款</a></li>
+			<li><a href="./questions.html">常见问题</a></li>
+		</ul>		
+	</header>
+	<!-- header-end -->
+
+	<!-- container-begin -->
+	<section id="wrapper" class="wrapper">
+		<div id="scroller" class="scroller">
+			<div class="yas">
+				<div class="title">
+					<i></i>
+					<span>会员等级</span>
+				</div>
+			</div>
+			<div class="vip">
+				<ul class="vip-level">
+					<li class="item clearfix">
+						<div class="v-l-l pull-left">
+							<i class="vip-1"></i>
+							<span>钻石VIP</span>
+						</div>
+						<div class="v-l-r pull-left">
+							<p class="color">
+								晋级钻石VIP仅通过特邀会员才有资格
+							</p>
+							<p>注明：VIP晋级奖金每个级别只能申请一次，所有VIP会员保级期间每个月至少要达到1000000
+							的有效流水，如果没有满足该条件将会直接降一级。</p>
+						</div>
+					</li>
+					<li class="item clearfix">
+						<div class="v-l-l pull-left">
+							<i class="vip-2"></i>
+							<span>白金VIP</span>
+						</div>
+						<div class="v-l-r pull-left">
+							<p class="color">
+								会员晋级黄金VIP后，如果连续3个月有效投注达到3000000流水即可晋级为白金VIP
+							</p>
+							<p>会员晋级白金VIP 后，有效期为两个月,会员晋级白金VIP后，保级期两个月，如果连续两个月没有达到3000000有效流水，则将会降一级。</p>
+						</div>
+					</li>
+					<li class="item clearfix">
+						<div class="v-l-l pull-left">
+							<i class="vip-3"></i>
+							<span>黄金VIP</span>
+						</div>
+						<div class="v-l-r pull-left">
+							<p class="color">
+								会员月有效投注累计达到2000000流水，有效期30天。
+							</p>
+							<p>晋级黄金VIP后，有效期为2个月。升级VIP后，如果第一个月没有达到流水要求可以保级到第二月，可继续打够2000000流水。如果两个月没有达到流水要求，则将会降级。</p>
+						</div>
+					</li>
+					<li class="item clearfix">
+						<div class="v-l-l pull-left">
+							<i class="vip-4"></i>
+							<span>白银VIP</span>
+						</div>
+						<div class="v-l-r pull-left">
+							<p class="color">
+								会员月有效投注累计达到50万有效流水，有效期30天。
+							</p>
+							<p>晋级白银会员后，有效期为2个月。升级白银后，如果第一个月未达到流水要求可以保级到第二月，可在次月当月打够500000流水。如果连续两个月没有达到流水要求，则将会降级。</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- container-end -->
+
+	<!-- footer-begin -->
+	<footer>
+		<ul class="ft-nav clearfix">
+			<li>
+				<a href="./index.html">
+					<i></i>
+					<span>首页</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>存款</span>
+				</a>
+			</li>					
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>转账</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>客服</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>我的</span>
+				</a>
+			</li>
+		</ul>
+	</footer>
+	<!-- footer-end -->
+	<script type="text/javascript" src="lib/iscroll/iscroll.js"></script>
+	<script src="js/common.js"></script>
+	<script type="text/javascript">
+
+		$$.iScroll("wrapper");
+
+		$(document).ready(function(){
+
+			$$.goBack();
+
+			$$.showMenu();
+
+		})
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>亚盛国际</title>
+	<link rel="stylesheet" href="css/layout.css">
+	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="js/config.js"></script>
+</head>
+<body>
+	<!-- header-begin -->
+	<input id="checkSlide" type="checkbox">
+	<header>
+		<i class="history"></i>
+		<h4>转账</h4>
+	</header>
+	<!-- header-end -->
+
+	<!-- container-begin -->
+	<section id="wrapper" class="wrapper">
+		<div id="scroller" class="scroller">
+			<div class="t-s-b yas">
+				<div class="title">
+					<i></i>
+					<span>主账户余额：12345.00</span>
+				</div>
+				<div class="cont">
+					<form class="uForm" action="">
+						<div class="line clearfix">
+							<label><span>转出账户:</span></label>
+							<div class="input">
+		                        <select value="">
+		                        	<option name="" id="">主账户</option>
+		                        	<option name="" id="">AG真人</option>
+		                        	<option name="" id="">AG极速厅</option>
+		                        	<option name="" id="">OG真人</option>
+		                        	<option name="" id="">eBET综合厅</option>
+		                        	<option name="" id="">PT电子游艺</option>
+		                        </select>
+		                    </div>
+						</div>
+						<div class="line clearfix">
+							<label><span>转入账户:</span></label>
+							<div class="input">
+		                        <select value="">
+		                        	<option name="" id="">主账户</option>
+		                        	<option name="" id="">AG真人</option>
+		                        	<option name="" id="">AG极速厅</option>
+		                        	<option name="" id="">OG真人</option>
+		                        	<option name="" id="">eBET综合厅</option>
+		                        	<option name="" id="">PT电子游艺</option>
+		                        </select>
+		                    </div>
+						</div>
+						<div class="line clearfix">
+							<label for="transferAmount"><span>转账金额:</span></label>
+							<div class="input">
+		                        <input tabindex="2" id="transferAmount" name="transferAmount" value="" type="text" placeholder="请输入转账金额">
+		                    </div>
+						</div>
+						<p class="tiptxt"></p>
+						<p class="text">* 转账过程中如有疑问，请及时联系 <a href="javascript:void(0);">在线客服。</a></p>
+						<a href="javascript:void(0);" class="btn transferBtn">确&nbsp;认&nbsp;提&nbsp;交</a>
+					</form>
+				</div>
+				<div class="title">
+					<i></i>
+					<span>刷新余额</span>
+					<a href="javascript:void(0);" class="btn">刷&nbsp;&nbsp;新</a>
+				</div>
+				<ul class="accountLists">
+					<li class="item">
+						<span class="actName pull-left">AG真人</span>
+						<span class="actAmount pull-right">
+							123.00
+							<i></i>
+						</span>
+					</li>
+					<li class="item">
+						<span class="actName pull-left">AG极速厅</span>
+						<span class="actAmount pull-right">
+							1234.00
+							<i></i>
+						</span>
+					</li>
+					<li class="item">
+						<span class="actName pull-left">OG真人</span>
+						<span class="actAmount pull-right">
+							113.00
+							<i></i>
+						</span>
+					</li>
+					<li class="item">
+						<span class="actName pull-left">eBET综合厅</span>
+						<span class="actAmount pull-right">
+							125.00
+							<i></i>
+						</span>
+					</li>
+					<li class="item">
+						<span class="actName pull-left">PT电子游艺</span>
+						<span class="actAmount pull-right">
+							1238.00
+							<i></i>
+						</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- container-end -->
+
+	<!-- footer-begin -->
+	<footer>
+		<ul class="ft-nav clearfix">
+			<li>
+				<a href="./index.html">
+					<i></i>
+					<span>首页</span>
+				</a>
+			</li>
+			<li>
+				<a href="./deposit.html">
+					<i></i>
+					<span>存款</span>
+				</a>
+			</li>					
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>转账</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>客服</span>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<i></i>
+					<span>我的</span>
+				</a>
+			</li>
+		</ul>
+	</footer>
+	<!-- footer-end -->
+	<script type="text/javascript" src="lib/iscroll/iscroll.js"></script>
+	<script src="js/common.js"></script>
+	<script type="text/javascript">
+
+		$$.iScrollForms("wrapper");
+
+		$(document).ready(function(){
+
+			$$.goBack();
+
+			$$.transferForm();
+
+		})
+
+	</script>
+</body>
+</html>
